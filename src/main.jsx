@@ -12,4 +12,4 @@ import {router} from './Routes/routes.jsx';
   <StrictMode>
       <RouterProvider router={router} />
   </StrictMode>,
-  )
+  )  
