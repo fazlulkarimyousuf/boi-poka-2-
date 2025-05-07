@@ -1,6 +1,6 @@
 import React from 'react';
 
-import bookimage from '../../assets/books.jpg' 
+import bookimage from '../../assets/the.jpg' 
 
 const Banner = () => {
     return (
@@ -11,10 +11,6 @@ const Banner = () => {
     <div>
       <h1 className="text-5xl font-bold">Books to freshen up 
          <br /> your bookshelf</h1>
-      <p className="py-6">
-        Provident cupiditate voluptatem et in. Quaerat fugiat ut assumenda excepturi exercitationem
-        quasi. In deleniti eaque aut repudiandae et a id nisi.
-      </p>
       <button className="btn bg-green-600">View The List</button>
     </div>
   </div>
