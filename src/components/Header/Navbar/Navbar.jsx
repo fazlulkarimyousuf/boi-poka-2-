@@ -6,7 +6,7 @@ const Navbar = () => {
 
       const Links = <>
       <Link to='/'><li className='m-2'>Home</li></Link>
-        <Link><li className='m-2'>Listed Books</li></Link>
+        <Link to='ReadList'><li className='m-2'>ReadList</li></Link>
         <Link to='/about'><li className='m-2'>About</li></Link>
       </>
 
@@ -38,3 +38,5 @@ const Navbar = () => {
 };
 
 export default Navbar;
+
+
