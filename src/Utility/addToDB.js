@@ -10,6 +10,7 @@ const getStoreBook = () => {
 
     else {
         return [];
+
     }
 }
 
@@ -30,4 +31,4 @@ const addToStoreDB = (id) => {
         
     }
 }
-export {addToStoreDB}
+export {addToStoreDB,getStoreBook};

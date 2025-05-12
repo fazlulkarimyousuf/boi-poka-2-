@@ -1,22 +1,40 @@
-import React from 'react';
+import React, {useEffect} from 'react';
+import {useLoaderData} from 'react-router';
 import { Tab, Tabs, TabList, TabPanel } from 'react-tabs';
 import 'react-tabs/style/react-tabs.css';
+import {getStoreBook} from '../../Utility/addToDB';
 
 const ReadList = () => {
+
+
+  const data = useLoaderData();
+  console.log(data);
+
+  
+
+  useEffect(() => {
+    const storedBookData = getStoreBook(); 
+    console.log(storedBookData);
+    
+
+  },[])
+
+
+  
     return (
         <div>
             {/* <h1>hi ami  ReadList</h1> */}
             <Tabs>
     <TabList>
-      <Tab>Title 1</Tab>
-      <Tab>Title 2</Tab>
+      <Tab>Read Book List</Tab>
+      <Tab>Wishlist Books</Tab>
     </TabList>
 
     <TabPanel>
-      <h2>Any content 1</h2>
+      <h2>Book i Read</h2>
     </TabPanel>
     <TabPanel>
-      <h2>Any content 2</h2>
+      <h2>My wish List</h2>
     </TabPanel>
   </Tabs>
         </div>
